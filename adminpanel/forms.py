@@ -1,6 +1,6 @@
 from django import forms
 
-from adminpanel.models import FilterWords, Articles, Sites, Clients
+from adminpanel.models import FilterWords, Articles, Sites, Clients, Notifications
 
 
 # forms to create and update objects in database
@@ -15,7 +15,7 @@ class FilterWordsForm(forms.ModelForm):
 
 
 class NotificationsForm(forms.ModelForm):
-    model = FilterWords
+    model = Notifications
 
 
 class ArticlesForm(forms.ModelForm):
