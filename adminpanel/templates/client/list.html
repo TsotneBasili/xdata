@@ -1,0 +1,6 @@
+{% for client in clients %}
+<br>ID: {{ client.id }}, Username: {{ client.username }},  Tts_enabled: {{ client.tts_enabled }}; |</br>
+
+{% empty %}
+<p>No clients available</p>
+{% endfor %}

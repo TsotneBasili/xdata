@@ -1,0 +1,6 @@
+{% for notification in notifications %}
+<br>ID: {{ notification.id }}, Clientid: {{ notification.clientid.id }}, Sms: {{ notification.sms }}, Telegram: {{ notification.telegram }}, Whatsapp: {{ notification.whatsapp }}, Email: {{ notification.email }}, Comment: {{ notification.comment }} ;  |</br>
+
+{% empty %}
+<p>No notifications available</p>
+{% endfor %}

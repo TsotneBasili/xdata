@@ -1,0 +1,9 @@
+<h1 class="text-center">Delete Site</h1>
+<div class="alert alert-danger" role="alert">
+    Are you sure you want to delete site ID: {{ sites.id }}, Name:{{ sites.sitename }}?
+</div>
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger"> Yes, delete </button>
+</form>
+<a href="{% url 'site_detail' sites.pk %}"  class="btn btn-primary">No, take me back</a>

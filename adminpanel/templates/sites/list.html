@@ -1,0 +1,7 @@
+{% for site in sites %}
+<br>ID: {{ site.id }}, Name: {{ site.sitename }} |</br>
+
+{% empty %}
+<p>No sites available</p>
+{% endfor %}
+

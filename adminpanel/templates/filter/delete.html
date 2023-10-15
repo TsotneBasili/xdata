@@ -1,0 +1,9 @@
+<h1 class="text-center">Delete Filter</h1>
+<div class="alert alert-danger" role="alert">
+    Are you sure you want to delete client ID: {{ filter.id }}, Word:{{ filter.word }}?
+</div>
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger"> Yes, delete </button>
+</form>
+<a href="{% url 'filter_detail' filter.pk %}"  class="btn btn-primary">No, take me back</a>

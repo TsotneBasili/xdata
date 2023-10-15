@@ -1,0 +1,9 @@
+<h1 class="text-center">Delete Notification</h1>
+<div class="alert alert-danger" role="alert">
+    Are you sure you want to delete notification ID: {{ notifications.id }}, Sms:{{ notifications.sms }}?
+</div>
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger"> Yes, delete </button>
+</form>
+<a href="{% url 'notification_detail' notifications.pk %}"  class="btn btn-primary">No, take me back</a>

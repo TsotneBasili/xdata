@@ -1,0 +1,7 @@
+{% for article in article %}
+<br>ID: {{ article.id }}, site: {{ article.site.id }}, clientid: {{ article.clientid.id }}, article_date: {{ article.article_date }}, autor: {{ article.autor }}, url: {{ article.url }}, article_name: {{ article.article_name }}, Article_text: {{ article.article_text }}; |</br>
+
+{% empty %}
+<p>No Articles available</p>
+{% endfor %}
+

@@ -1,0 +1,6 @@
+{% for filter in filters %}
+<br>ID: {{ filter.id }}, Word: {{ filter.word }}, Wordalias: {{ filter.wordalias }}, subwordalias: {{ filter.subwordalias }}, stopword: {{ filter.stopword }} ; |</b>
+
+{% empty %}
+<p>No filters available</p>
+{% endfor %}
